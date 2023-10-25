@@ -1,0 +1,25 @@
+git ls-tree
+git show
+git restore --staged filename
+git log --oneline
+git restore --source=HEAD~1 filename
+
+# Git internals
+git hash-object --stdin -w
+git cat-file -t <hash>
+git cat-file -p <hash>
+git update-index --add --cacheinfo 100644 <hash> filename.txt
+git cat-file  -p <hash> > filename.txt
+git write-tree
+git cat-file -t <tree hash>
+git cat-file -p <tree hash>
+git commit-tree <tree hash> -m "commit msg" -p <paresh tree hash>
+echo <commit hash > > .git/refs/heads/master
+or git update-ref refs/heads/master <commit hash >
+
+# git reset
+git reset --soft HEAD~1   (move the pointer to HEAD -1 ; no change in staging area)
+git reset --mixed HEAD~1  (move the poitner to HEAD -1;updates to staging area)
+git reset --hard HEAD~1 (move the pointer to HEAD -1;updates to staging area;updates working area)
+
+# undo the last commit and make minor changes and commit again: --soft
