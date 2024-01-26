@@ -23,3 +23,10 @@ git reset --mixed HEAD~1  (move the poitner to HEAD -1;updates to staging area)
 git reset --hard HEAD~1 (move the pointer to HEAD -1;updates to staging area;updates working area)
 
 # undo the last commit and make minor changes and commit again: --soft
+
+git log --all --graph --decorate --oneline --simplify-by-decoration
+
+git config --global user.name "Rajesh"
+git config --global user.email "rajesh@brainupgrade.in"
+git init
+git clone <url>
