@@ -1,4 +1,4 @@
-git ls-tree
+git ls-tree -rtl HEAD
 git show
 git restore --staged filename
 git log --oneline
@@ -30,3 +30,36 @@ git config --global user.name "Rajesh"
 git config --global user.email "rajesh@brainupgrade.in"
 git init
 git clone <url>
+
+# Other commands
+revert restore reset
+ls-tree -rtl
+
+git cherry-pic <commitid>
+git revert HEAD~1
+git reflog
+git log -g  (log with reflog)
+git show <commidid>
+
+git diff (--staged  index and working dir - default)
+git diff --cached  (HEAD and index)
+git diff HEAD -- filename  (HEAD and working dir)
+git diff --no-index file1 file2
+git diff HEAD~1 HEAD > patch1.patch
+git reset --hard HEAD~1
+git apply patch1.patch
+
+git status --stat
+git log --oneline
+git log --pretty=format:"%h %s" --graph
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty=format:"%h - %an, %ar : %s" --since="2 weeks ago"
+
+01 - init,add,commit 
+02 - diff (working dir, index, HEAD, remote) 
+03 - branch, checkout, merge
+04 - rebase, cherry-pick, revert
+05 - reset, reflog, log, show
+06 - stash, clean, rm, mv
+07 - tag
+08 - clone, fetch, pull, push
