@@ -6,20 +6,31 @@ https://github.com/brainupgrade-in/weather-py/blob/main/.github/CODEOWNERS
 ./github-workflows/.github/CODEOWNERS
 https://github.com/ghewareunigpssolutions/codeowners/blob/main/.github/CODEOWNERS
 
-./weather-py/.github/workflows/ci.yml
-./request-logger/.github/workflows/build-test-push.yml
-./request-logger/.github/workflows/codeql.yml
-./gitops/gitops-apps-hello/.github/workflows/release.yml
-./gitops/gitops-apps-hello/.github/workflows/docker-publish.yml
+
+01 docker build and push:
 https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/docker-publish.yml
-./github-workflows/.github/workflows/release.yml
-./github-workflows/.github/workflows/maven-build.yml
-./github-workflows/.github/workflows/matrix.yml
-./spring-petclinic/.gitpod.yml
-./spring-petclinic/docker-compose.yml
-./spring-petclinic/.github/workflows/maven-build.yml
+
+Callable workflow:
+https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/call-maven-build-workflow.yaml
+Manual driven workflow:
+https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/codeql.yml
+cache and docker:
+https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/build-test-push.yml
+create release:
+https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/release.yml
+https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/release.yml
+matrix codeql:
+https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/codeql.yml
+docker build push test:
+https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/ci.yml
+simple matrix build:
+https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/matrix.yml
+callable workflow:
+https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/maven-build.yml
+java build - simple workflow:
+https://github.com/brainupgrade-in/spring-petclinic/blob/main/.github/workflows/maven-build.yml
+auto assign - PR, issue:
 https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/auto-assign.yml
-https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/proof-html.yml
 
 ghewareunigpssolutions/github-selfhostedrunner
 github-copilot-demo
