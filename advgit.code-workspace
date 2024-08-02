@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../codeowners"
+		},
+		{
+			"path": "../github-workflows"
+		},
+		{
+			"path": "../request-logger"
+		},
+		{
+			"path": "../weather-py"
+		},
+		{
+			"path": "../spring-petclinic"
+		},
+		{
+			"path": "../gitops/gitops-apps-hello"
+		},
+		{
+			"name": "demo-repository-1",
+			"path": "../demo-repository-1"
+		},
+		{
+			"name": "github-jenkinscicd",
+			"path": "../github-jenkinscicd"
+		},
+		{
+			"name": "github-kind",
+			"path": "../github-kind"
+		},
+		{
+			"name": "github-selfhostedrunner",
+			"path": "../github-selfhostedrunner"
+		},
+		{
+			"name": "githubats",
+			"path": "../githubats"
+		}
+	]
+}

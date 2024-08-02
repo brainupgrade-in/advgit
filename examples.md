@@ -36,6 +36,9 @@ https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/
 ## auto assign - PR, issue:
 https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/auto-assign.yml
 
+## Github Pages
+https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/jekyll-gh-pages.yml
+
 ## create release (push tag ) (skip):
 https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/release.yml
 https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/release.yml 
