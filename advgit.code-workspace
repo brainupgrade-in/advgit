@@ -62,6 +62,12 @@
 		},
 		{
 			"path": "../git-stash"
+		},
+		{
+			"path": "../git-cherry-pick"
+		},
+		{
+			"path": "../git-revert"
 		}
 	],
 	"settings": {
