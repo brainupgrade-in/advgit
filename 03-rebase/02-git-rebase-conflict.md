@@ -67,13 +67,13 @@ Git will notify you of the conflict and mark the conflicting section in `example
 # example.py
 def main():
 <<<<<<< HEAD
-    print("Hello from main")
-=======
     print("Hello from the updated main branch")
->>>>>>> origin/main
+=======
+    print("Hello from main")
 
 def new_feature():
     print("Hello from feature X")
+>>>>>>> ca421af (feature x)
 ```
 
 Edit `example.py` to combine the changes. For example:

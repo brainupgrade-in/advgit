@@ -4,30 +4,28 @@ You are working on a feature branch (`feature-y`). Meanwhile, some non-conflicti
 
 #### Initial Setup:
 
-- The `main` branch has a file `example.py` with the following content:
+- The `main` branch has a file `main.py` with the following content:
   ```python
-  # example.py
+  # main.py
   def main():
       print("Hello from main")
   ```
 
 #### Branch `feature-y`:
 
-- In `feature-y`, you add a new function to `example.py`:
+- In `feature-y`, you add the following code to `featurey.py`:
   ```python
-  # example.py
-  def main():
-      print("Hello from main")
-
+  # featurey.py
+  
   def new_feature_y():
       print("Hello from feature Y")
   ```
 
 #### Meanwhile, on `main`:
 
-- Another developer adds a new utility function to `example.py`:
+- Another developer adds a new utility function to `main.py`:
   ```python
-  # example.py
+  # main.py
   def main():
       print("Hello from main")
 
@@ -38,40 +36,37 @@ You are working on a feature branch (`feature-y`). Meanwhile, some non-conflicti
 ### Your Challenge:
 
 1. **Rebase `feature-y` onto `main`**.
-2. **Ensure that the final `example.py` file includes both the utility function from `main` and the new feature from `feature-y`**.
+2. **Ensure that the final includes both files with their latest content**.
 
 ### Detailed Steps:
 
 #### Step 1: Rebase `feature-y` onto `main`
 
-1. **Fetch the latest changes from the remote repository**:
-   ```sh
-   git fetch origin
-   ```
-
-2. **Checkout your feature branch**:
+1. **Checkout your feature branch**:
    ```sh
    git checkout feature-y
    ```
 
-3. **Rebase your feature branch onto `main`**:
+2. **Rebase your feature branch onto `main`**:
    ```sh
-   git rebase origin/main
+   git rebase main
    ```
 
 Since there are no conflicting changes, Git will reapply the commits from `feature-y` onto the latest commit from `main` automatically.
 
 #### Final Verification
 
-Ensure the `example.py` file includes both the utility function from `main` and the new feature from `feature-y`:
+Ensure the `main.py` file includes both commits on `main` and the new feature in `featurey.py`:
 
 ```python
-# example.py
+# main.py
 def main():
     print("Hello from main")
 
 def utility_function():
     print("This is a utility function")
+
+# featurey.py
 
 def new_feature_y():
     print("Hello from feature Y")
@@ -90,21 +85,20 @@ Assume the initial commit history looks like this:
 
 #### `main` branch:
 ```
-commit 1: Initial commit with example.py
-commit 2: Add utility_function to example.py
+commit 1: Initial commit with main.py
+commit 2: Add utility_function to main.py
 ```
 
 #### `feature-y` branch:
 ```
-commit 1: Initial commit with example.py
-commit 2: Add new_feature_y to example.py
+commit 1: Initial commit with featurey.py
 ```
 
 After rebasing `feature-y` onto `main`, the commit history of `feature-y` will be:
 ```
-commit 1: Initial commit with example.py
-commit 2: Add utility_function to example.py
-commit 3: Add new_feature_y to example.py (rebased)
+commit 1: Initial commit with main.py
+commit 2: Add utility_function to main.py
+commit 3: Add new_feature_y to featurey.py (rebased)
 ```
 
 ### Conclusion:

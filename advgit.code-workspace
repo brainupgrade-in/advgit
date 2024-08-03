@@ -50,6 +50,12 @@
 		},
 		{
 			"path": "../git-merge"
+		},
+		{
+			"path": "../git-rebase"
+		},
+		{
+			"path": "../git-rebase-conflict"
 		}
 	],
 	"settings": {
