@@ -40,6 +40,15 @@
 		{
 			"name": "githubats",
 			"path": "../githubats"
+		},
+		{
+			"path": "../../../../../tmp/gh-git-basics"
+		},
+		{
+			"path": "../git-rebase-merge"
 		}
-	]
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "disabled"
+	}
 }
