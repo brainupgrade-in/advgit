@@ -56,6 +56,12 @@
 		},
 		{
 			"path": "../git-rebase-conflict"
+		},
+		{
+			"path": "../git-reset-soft"
+		},
+		{
+			"path": "../git-stash"
 		}
 	],
 	"settings": {
