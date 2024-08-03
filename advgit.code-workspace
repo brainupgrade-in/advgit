@@ -45,7 +45,11 @@
 			"path": "../../../../../tmp/gh-git-basics"
 		},
 		{
+			"name": "git-rebase-merge",
 			"path": "../git-rebase-merge"
+		},
+		{
+			"path": "../git-merge"
 		}
 	],
 	"settings": {
