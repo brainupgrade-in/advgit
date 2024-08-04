@@ -68,6 +68,9 @@
 		},
 		{
 			"path": "../git-revert"
+		},
+		{
+			"path": "../gh-adv-play-01"
 		}
 	],
 	"settings": {

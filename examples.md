@@ -50,8 +50,9 @@ https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-ac
 - Event Triggers:
 https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 
-ghewareunigpssolutions/github-selfhostedrunner
-github-copilot-demo
+- Runner images https://github.com/actions/runner-images/blob/ubuntu22/20240730.2/images/ubuntu/Ubuntu2404-Readme.md
+
+- Example workflow https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner#example-workflow
 
 # Codespaces - decontainers
 
@@ -67,3 +68,7 @@ https://github.com/ghewareunigpssolutions/github-selfhostedrunner/blob/main/.git
 ## Dev container ref:
 features - https://github.com/devcontainers/features/tree/main/src
 images - https://github.com/devcontainers/images/tree/main/src
+
+# Misc
+ghewareunigpssolutions/github-selfhostedrunner
+github-copilot-demo
