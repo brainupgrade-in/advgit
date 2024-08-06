@@ -10,31 +10,17 @@ https://github.com/ghewareunigpssolutions/codeowners/blob/main/.github/CODEOWNER
 
 # Github Actions
 
-## simple matrix build:
-https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/matrix.yml
-# java maven build - simple workflow (push main):
-https://github.com/brainupgrade-in/spring-petclinic/blob/main/.github/workflows/maven-build.yml (-Dcheckstyle.skip -DskipTests)
-## Manual driven workflow:
-https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/codeql.yml
-## Call reusable workflow:
-https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/call-maven-build-workflow.yaml
-
-## cache and docker:
-https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/build-test-push.yml
-## docker build push test (push pull main):
-https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/ci.yml
-## docker build and push (push tag):
-https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/docker-publish.yml
-## Release on tag (push tag):
-https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/release-on-tag.yml
-
-
-## matrix codeql (push pull main):
-https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/codeql.yml
-## callable workflow:
-https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/maven-build.yml
-## auto assign - PR, issue:
-https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/auto-assign.yml
+- Python -  build and test - https://github.com/brainupgrade-in/gh-actions-python/blob/main/.github/workflows/build-test.yml
+- Simple matrix build -  https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/matrix.yml
+- Manual driven workflow CodeQL on Java: https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/codeql.yml
+- Use cache between docker steps: https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/build-test-push.yml
+- Docker build & Test in Kubernetes cluster (push pull main): https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/ci.yml
+- Docker build and push (PUSH on tag):https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/docker-publish.yml
+- Create Github Release on tag (push tag): https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/release-on-tag.yml
+- CodeQL - Go (push pull main): https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/codeql.yml
+- Call reusable workflow: https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/call-maven-build-workflow.yaml
+- Callable / reusable workflow java maven build - simple workflow (push main) https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/maven-build-reusable.yml (-Dcheckstyle.skip -DskipTests)
+- auto assign - PR, issue: https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/auto-assign.yml
 
 ## Github Pages
 https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/jekyll-gh-pages.yml
@@ -55,15 +41,15 @@ https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 - Example workflow https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner#example-workflow
 
 # Codespaces - decontainers
+- Simple / Default https://github.com/brainupgrade-in/gh-actions-python
+- Python https://github.com/brainupgrade-in/weather-py/tree/develop
+- Java Spring boot https://github.com/brainupgrade-in/request-logger/tree/develop
+- Java Spring Boot https://github.com/brainupgrade-in/spring-petclinic/blob/main/.devcontainer/devcontainer.json
 
-https://github.com/brainupgrade-in/weather-py/tree/develop
-https://github.com/brainupgrade-in/request-logger/tree/develop
-https://github.com/brainupgrade-in/spring-petclinic/blob/main/.devcontainer/devcontainer.json
-
-https://github.com/ghewareunigpssolutions/github-jenkinscicd/blob/main/.devcontainer/devcontainer.json
-https://github.com/ghewareunigpssolutions/github-kind/blob/main/.devcontainer/devcontainer.json
-https://github.com/ghewareunigpssolutions/github-kind/blob/main/.github/workflows/self-hosted-runner.yml
-https://github.com/ghewareunigpssolutions/github-selfhostedrunner/blob/main/.github/workflows/build-runs-on-self-hosted-runner.yml
+- OSS Jenkins https://github.com/ghewareunigpssolutions/github-jenkinscicd/blob/main/.devcontainer/devcontainer.json
+- OSS Kubernetes https://github.com/ghewareunigpssolutions/github-kind/blob/main/.devcontainer/devcontainer.json
+- Self Hosted Runner https://github.com/ghewareunigpssolutions/github-kind/blob/main/.github/workflows/self-hosted-runner.yml
+- Self hosted runner https://github.com/ghewareunigpssolutions/github-selfhostedrunner/blob/main/.github/workflows/build-runs-on-self-hosted-runner.yml
 
 ## Dev container ref:
 features - https://github.com/devcontainers/features/tree/main/src
