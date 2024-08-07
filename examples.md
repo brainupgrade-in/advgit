@@ -1,12 +1,11 @@
 # CODEOWNERS
 
-https://github.com/brainupgrade-in/request-logger/blob/main/.github/CODEOWNERS
-https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/CODEOWNERS
-https://github.com/brainupgrade-in/weather-py/blob/main/.github/CODEOWNERS
-
-./gitops/gitops-apps-hello/.github/CODEOWNERS
-./github-workflows/.github/CODEOWNERS
-https://github.com/ghewareunigpssolutions/codeowners/blob/main/.github/CODEOWNERS
+- https://github.com/brainupgrade-in/request-logger/blob/main/.github/CODEOWNERS
+- https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/CODEOWNERS
+- https://github.com/brainupgrade-in/weather-py/blob/main/.github/CODEOWNERS
+- https://github.com/brainupgrade-in/gitops/gitops-apps-hello/.github/CODEOWNERS
+- https://github.com/ghewareunigpssolutions/github-workflows/.github/CODEOWNERS
+- https://github.com/ghewareunigpssolutions/codeowners/blob/main/.github/CODEOWNERS
 
 # Github Actions
 
@@ -20,25 +19,12 @@ https://github.com/ghewareunigpssolutions/codeowners/blob/main/.github/CODEOWNER
 - CodeQL - Go (push pull main): https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/codeql.yml
 - Call reusable workflow: https://github.com/brainupgrade-in/request-logger/blob/main/.github/workflows/call-maven-build-workflow.yaml
 - Callable / reusable workflow java maven build - simple workflow (push main) https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/maven-build-reusable.yml (-Dcheckstyle.skip -DskipTests)
+
 - auto assign - PR, issue: https://github.com/ghewareunigpssolutions/demo-repository/blob/main/.github/workflows/auto-assign.yml
-
-## Github Pages
-https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/jekyll-gh-pages.yml
-
-## create release (push tag ) (skip):
-https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/release.yml
+- Github Pages https://github.com/brainupgrade-in/weather-py/blob/main/.github/workflows/jekyll-gh-pages.yml
+- create release (push tag ) (skip): https://github.com/brainupgrade-in/gitops-apps-hello/blob/main/.github/workflows/release.yml
 https://github.com/brainupgrade-in/github-workflows/blob/main/.github/workflows/release.yml 
 
-
-## References
-- workflow syntax:
-https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
-- Event Triggers:
-https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
-
-- Runner images https://github.com/actions/runner-images/blob/ubuntu22/20240730.2/images/ubuntu/Ubuntu2404-Readme.md
-
-- Example workflow https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner#example-workflow
 
 # Codespaces - decontainers
 - Simple / Default https://github.com/brainupgrade-in/gh-actions-python
@@ -48,13 +34,16 @@ https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
 
 - OSS Jenkins https://github.com/ghewareunigpssolutions/github-jenkinscicd/blob/main/.devcontainer/devcontainer.json
 - OSS Kubernetes https://github.com/ghewareunigpssolutions/github-kind/blob/main/.devcontainer/devcontainer.json
-- Self Hosted Runner https://github.com/ghewareunigpssolutions/github-kind/blob/main/.github/workflows/self-hosted-runner.yml
-- Self hosted runner https://github.com/ghewareunigpssolutions/github-selfhostedrunner/blob/main/.github/workflows/build-runs-on-self-hosted-runner.yml
+- Self Hosted Runner - Simple: https://github.com/ghewareunigpssolutions/github-kind/blob/main/.github/workflows/self-hosted-runner.yml
+- Self hosted runner - EC2 deploy:  https://github.com/ghewareunigpssolutions/github-selfhostedrunner/blob/main/.github/workflows/build-runs-on-self-hosted-runner.yml
 
-## Dev container ref:
-features - https://github.com/devcontainers/features/tree/main/src
-images - https://github.com/devcontainers/images/tree/main/src
+# References
+- Workflow syntax: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+- Event Triggers: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows
+- Runner Images https://github.com/actions/runner-images/blob/ubuntu22/20240730.2/images/ubuntu/Ubuntu2404-Readme.md
+- Example GH Actions Workflow https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner#example-workflow
+- Devcontainer Features - https://github.com/devcontainers/features/tree/main/src
+- Devcontainer Images - https://github.com/devcontainers/images/tree/main/src
 
 # Misc
-ghewareunigpssolutions/github-selfhostedrunner
 github-copilot-demo
